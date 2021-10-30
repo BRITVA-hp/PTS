@@ -345,7 +345,25 @@ img {
 .outer {
   max-width: 1920px;
   background-color: #0C0C14;
-  margin: auto; }
+  margin: auto;
+  position: relative; }
+  .outer__money {
+    position: absolute; }
+    .outer__money--1 {
+      left: 20px;
+      top: 986px; }
+    .outer__money--2 {
+      right: 10px;
+      top: 1843px; }
+    .outer__money--3 {
+      left: 20px;
+      top: 2731px; }
+    .outer__money--4 {
+      right: 10px;
+      top: 3770px; }
+    .outer__money--5 {
+      left: 20px;
+      top: 4672px; }
 
 .content {
   max-width: 1520px;
@@ -897,6 +915,8 @@ img {
       top: 50%; }
 
 @media screen and (max-width: 1500px) {
+  .outer__money {
+    display: none; }
   .review {
     padding-right: 0;
     padding-left: 0; }
