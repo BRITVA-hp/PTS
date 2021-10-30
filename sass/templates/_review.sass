@@ -1,0 +1,99 @@
+.review
+    margin-bottom: 200px
+    &__window
+        overflow: hidden
+        padding-top: 62px
+        max-width: 1419px
+        margin: auto
+        &--medium
+            display: none
+            max-width: none
+            margin: 0
+        &--small
+            display: none
+    &__field
+        display: flex
+        align-items: flex-start
+        transition: 0.3s
+    &__wrap
+        display: grid
+        grid-template: 1fr 1fr / 1fr 1fr
+        justify-items: center
+        grid-column-gap: 19px
+        grid-row-gap: 134px
+        margin-right: 19px
+        &:last-of-type
+            margin-right: 0
+        &--medium
+            display: flex
+        &--small
+            display: flex
+    &__card
+        width: 700px
+        height: 330px
+        background: linear-gradient(180deg, rgba(44, 63, 80, 0.3) 0%, rgba(44, 63, 80, 0.15) 100%)
+        backdrop-filter: blur(4px)
+        border-radius: 15px
+        padding: 78px 39px 0
+        position: relative
+        text-align: center
+        &__name
+            font-family: 'Gilroy-Bold', sans-serif
+            font-style: normal
+            font-size: 20px
+            line-height: 24px
+            margin-bottom: 10px
+        &__text
+            font-family: 'Gilroy', sans-serif
+            font-style: normal
+            font-size: 18px
+            line-height: 21px
+        &__photo
+            position: absolute
+            left: 50%
+            top: 0
+            transform: translate(-50%, -50%)
+    &__title
+        text-align: center
+        font-style: normal
+        font-weight: bold
+        font-size: 48px
+        line-height: 120%
+        letter-spacing: -0.03em
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        top: 0
+        span
+            color: #F25D00
+    &__header
+        display: flex
+        position: relative
+        margin-bottom: 100px
+        padding-right: 35px
+    &__control
+        display: flex
+        margin-left: auto
+        &--medium
+            display: none
+        &--small
+            display: none
+    &__arrow
+        width: 40px
+        height: 40px
+        border-radius: 50%
+        border: 3px solid #ffffff
+        display: flex
+        align-items: center
+        justify-content: center
+        cursor: pointer
+        transition: 0.3s
+        background-color: #ffffff
+        path
+            stroke: #060622
+        &--inactive
+            background-color: transparent
+            path
+                stroke: #ffffff
+        &--prev
+            margin-right: 15px
