@@ -38,6 +38,16 @@
             margin-bottom: 50px
  
 @media screen and ( max-width: 1300px )
+    .modal
+        padding: 0
+        &__dialog
+            width: 100%
+            height: 100%
+            border-radius: 0
+        &-ok
+            &__dialog
+                padding: 150px 200px 240px
+
     .main
         padding: 20px
 
@@ -60,6 +70,76 @@
                 display: none
 
 @media screen and ( max-width: 991px )
+    .modal
+        padding: 30px 0
+        &-ok
+            &__money
+                &--1, &--2
+                    display: none
+                &--3
+                    bottom: 180px
+            &__title
+                font-size: 23px
+                line-height: 29px
+                margin-bottom: 2px
+            &__text
+                font-size: 15px
+                line-height: 19px
+            &__dialog
+                padding: 140px 20px 280px
+                width: 320px
+            &__close
+                width: 15px
+                top: 20px
+                right: 20px
+            &__img
+                width: 30px
+                margin-bottom: 24px
+        &__footer
+            font-size: 10px
+            line-height: 12px
+        &__money
+            display: none
+        &__close
+            width: 15px
+            top: 20px
+            right: 20px
+        &__input
+            margin-bottom: 15px
+            font-size: 12px
+            line-height: 14px
+            padding: 20px 23px
+            &:last-of-type
+                margin-bottom: 0
+        &__button
+            margin-bottom: 10px
+            font-size: 18px
+            line-height: 21px
+            padding: 15px 0
+        &__box
+            display: flex
+            flex-direction: column
+            grid-gap: 0
+            margin-bottom: 15px
+        &__subtitle
+            font-size: 15px
+            line-height: 19px
+            margin-bottom: 30px
+        &__title
+            font-size: 23px
+            line-height: 29px
+            margin-bottom: 10px
+            span
+                width: 32px
+                height: 27px
+                background-size: contain
+        &__dialog
+            padding: 48px 20px
+            width: auto
+            height: auto
+            max-width: 400px
+            border-radius: 15px
+
     .footer
         &__text
             font-size: 11px
